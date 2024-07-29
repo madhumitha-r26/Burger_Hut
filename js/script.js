@@ -7,13 +7,12 @@ navbarToggler.addEventListener('click', () => {
   navbarClose.classList.toggle('d-block');
 });
 
-function show_message() {
-  alert("YOUR SEAT IS RESERVED!")
+function reserve() {
+  alert("YOUR SEAT IS RESERVED!");
 }
 
 const d1 = new Date();
-document.getElementById("tday1").innerHTML = d1.getDate() +"/" +Number(d1.getMonth()+1) +"/" + d1.getFullYear();
+document.getElementById("tday1").innerHTML = d1.getDate() + "-" + Number(d1.getMonth() + 1) + "-" + d1.getFullYear();
 
 const d2 = new Date();
-document.getElementById("tday2").innerHTML = d2.getDate() +"/" +Number(d2.getMonth()+1) +"/" + d2.getFullYear();
-
+document.getElementById("tday2").innerHTML = d2.getDate() + "-" + Number(d2.getMonth() + 1) + "-" + d2.getFullYear();

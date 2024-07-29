@@ -54,7 +54,7 @@
   <div class="main md-px-3">
     <center><h1>Make a Reservation</h1></center>
     <br>
-<form method="post">
+<form>
   <input type="text" placeholder="Enter Name" required name="cus_name" id="cus_name"> <br><br>
   <input type="email" placeholder="Enter Email" required name="cus_email" id="cus_email"> <br><br>
   <input type="phone" placeholder="Enter Phone" required name="cus_phone" id="cus_phone"> <br><br>
@@ -78,17 +78,17 @@
 
 <br><br>
 <center>
-  <input type="submit" value="Make Reservation" onclick="show_message()">
+  <input type="submit" value="Make Reservation" onclick="reserve()">
 </center>
   
 </form>
 <br>
 
-<h5>People who have already done Reservation Today</h5>
+<h5>People who have already done reservation today</h5>
 <br>
 
 <center>
-<table>
+<table id="res_table">
   <tr>
     <th>Name</th>
     <th>Table Number</th>
